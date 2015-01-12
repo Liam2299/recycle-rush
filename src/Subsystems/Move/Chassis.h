@@ -6,8 +6,12 @@
 
 class Chassis: public Subsystem
 {
-private:
-public:
+private: int "4 new talons"
+push "4 new talons" to public
+
+void "4 new talons" to drive
+
+
 };
 
 #endif
