@@ -36,12 +36,11 @@ bool PotatoDrive::IsFinished()
 // Called once after isFinished returns true
 void PotatoDrive::End()
 {
-	chassis->Drive(0, 0, 0, 0, STRAFE_MOTOR_RATIO);
+	chassis->Drive(0.0, 0.0, 0.0, 0.0, STRAFE_MOTOR_RATIO);
 }
 
 // Called when another command which requires one or more of the same
 // subsystems is scheduled to run
-void PotatoDrive::Interrupted()
-{
-
+void PotatoDrive::Interrupted(){
+	 End();
 }

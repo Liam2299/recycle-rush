@@ -32,7 +32,7 @@ void Chassis::Drive(double vX, double vY, double vZ, double Throttle, double k){
 
 	double array [] = {mA, mB, mC, mD};
 
-	double max;
+	double max = 1.0;
 
 	for (int i = 0; i <= 3; i += 1)
 	{
