@@ -6,6 +6,7 @@
 #include "Subsystems/ExampleSubsystem.h"
 #include "OI.h"
 #include "WPILib.h"
+#include "Subsystems/Move/Chassis.h"
 
 /**
  * The base for all commands. All atomic commands should subclass CommandBase.
@@ -21,6 +22,7 @@ public:
 	// Create a single static instance of all of your subsystems
 	static ExampleSubsystem *examplesubsystem;
 	static OI *oi;
+	static Chassis *chassis;
 };
 
 #endif

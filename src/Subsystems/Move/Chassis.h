@@ -6,10 +6,16 @@
 
 class Chassis: public Subsystem
 {
-private: int "4 new talons"
-push "4 new talons" to public
-
-void "4 new talons" to drive
+	private:
+        Talon *drivemotorA;
+        Talon *drivemotorB;
+        Talon *drivemotorC;
+        Talon *drivemotorD;
+	public:
+        Chassis();
+        ~Chassis();
+        void Drive(double vX, double vY, double vZ, double Throttle, double k);
+		void InitDefaultCommand();
 
 
 };
