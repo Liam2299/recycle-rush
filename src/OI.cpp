@@ -3,7 +3,7 @@
 
 OI::OI()
 	// Make a new Joystick on Port 1.
-{	JoyDrv = new Joystick(1);
+{	JoyDrv = new Joystick(0);
 	// Process operator interface input here.
 }
 
